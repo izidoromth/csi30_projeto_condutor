@@ -58,8 +58,6 @@ def obter_fitness(permutacao, matriz):
     f = 0
     for i in range(len(permutacao)-1):
         f = f + distancia_cidades(permutacao[i]-1, permutacao[i+1]-1, matriz)
-    if(f == 4):
-        a = 0
     return f
 
 def seleciona(populacao, n):

@@ -1,0 +1,5 @@
+(define (problem US1)
+(:domain CARRIER)
+(:objects Entrada Corredor Almoxarifado)
+(:INIT (on Entrada) (neighbour Entrada Corredor) (neighbour Corredor Almoxarifado))
+(:goal (on Almoxarifado)))
